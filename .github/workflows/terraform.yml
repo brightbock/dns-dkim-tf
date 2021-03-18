@@ -1,0 +1,23 @@
+name: Terraform
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Format
+      run: terraform fmt -diff -check -recursive
+
+    - name: Init
+      run: terraform init -backend=false
+
+    - name: Validate (Does not check variable values and variable validation logic)
+      run: terraform validate
