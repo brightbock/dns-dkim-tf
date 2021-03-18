@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/brightbock/brightbock-dns-dkim-tf) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/brightbock/brightbock-dns-dkim-tf)
+![GitHub](https://img.shields.io/github/license/brightbock/brightbock-dns-dkim-tf) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/brightbock/brightbock-dns-dkim-tf) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brightbock/brightbock-dns-dkim-tf/Terraform)
 
 # DKIM DNS records
 
