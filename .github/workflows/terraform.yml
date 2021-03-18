@@ -8,13 +8,20 @@ on:
 
 jobs:
 
-  build:
+  job1:
+    name: Style
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
 
     - name: Format
       run: terraform fmt -diff -check -recursive
+
+  job2:
+    name: Functionality
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
 
     - name: Init
       run: terraform init -backend=false
