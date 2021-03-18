@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/brightbock/brightbock-dns-dkim-tf) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/brightbock/brightbock-dns-dkim-tf) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brightbock/brightbock-dns-dkim-tf/Terraform)
+![GitHub](https://img.shields.io/github/license/brightbock/dns-dkim-tf) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/brightbock/dns-dkim-tf) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brightbock/dns-dkim-tf/Terraform)
 
 # DKIM DNS records
 
@@ -14,7 +14,7 @@ This is a Terrafrom module to set DKIM DNS records in a Route53 zone.
 
 ```
 module "example_dkim_dns" {
-  source = "git::https://github.com/brightbock/brightbock-dns-dkim-tf.git?ref=v0.2.0"
+  source = "git::https://github.com/brightbock/dns-dkim-tf.git?ref=v0.2.1"
 
   route53_zone_name = "example.com"
 
