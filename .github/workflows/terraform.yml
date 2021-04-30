@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Format
-      run: terraform fmt -diff -check -recursive
+      run: terraform version && terraform fmt -diff -check -recursive
 
   job2:
     name: Functionality
