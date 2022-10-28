@@ -29,9 +29,6 @@ module "example_dkim_dns" {
   ### The DNS TTL defaults to 600 seconds
   # dkim_ttl = "600"
 
-  ### You should not need to change the AWS region!
-  # aws_region = "us-east-1"
-
 }
 ```
 
