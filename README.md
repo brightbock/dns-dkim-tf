@@ -14,7 +14,7 @@ This is a Terrafrom module to set DKIM DNS records in a Route53 zone.
 
 ```
 module "example_dkim_dns" {
-  source = "git::https://github.com/brightbock/dns-dkim-tf.git?ref=v0.2.1"
+  source = "git::https://github.com/brightbock/dns-dkim-tf.git?ref=v0.3.1"
 
   route53_zone_name = "example.com"
 
