@@ -18,6 +18,6 @@ resource "aws_route53_record" "dkim" {
   # resulting in one string like this: 'chunk" "chunk" "chunk'
   # (Terraform will add the outermost double-quotes to each element)
 
-  records = [join("\" \"", compact(regexall(".{1,220}",var.dkim_record)))]
+  records = [join("\" \"", compact(regexall(".{1,220}", var.dkim_record)))]
 }
 
