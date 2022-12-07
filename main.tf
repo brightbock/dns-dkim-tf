@@ -5,9 +5,11 @@ data "aws_route53_zone" "zone_info" {
 
 locals {
   record_domain = var.dkim_domain == "" ? var.route53_zone_name : var.dkim_domain
+  create_record = var.dkim_record == "" ? 0 : 1
 }
 
 resource "aws_route53_record" "dkim" {
+  count           = local.create_record
   zone_id         = data.aws_route53_zone.zone_info.zone_id
   type            = "TXT"
   ttl             = var.dkim_ttl

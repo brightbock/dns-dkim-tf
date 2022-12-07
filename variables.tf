@@ -39,7 +39,7 @@ variable "dkim_record" {
   default     = ""
   validation {
     condition = (
-      substr(var.dkim_record, 0, 6) == "v=DKIM"
+      (substr(var.dkim_record, 0, 6) == "v=DKIM") || (var.dkim_record == "")
     )
     error_message = "Please set dkim_record to a valid DKIM value."
   }
